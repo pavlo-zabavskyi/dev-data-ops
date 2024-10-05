@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  main-app:
+    image: main-ping-app:1.0
+    restart:
+      'no'
+    ports:
+      - '8051:8050'
+    networks:
+      - shared_network
+
+  secondary-app:
+    image: secondary-ping-app:1.0
+    restart:
+      'no'
+    ports:
+      - '8052:8050'
+    networks:
+      - shared_network
+
+networks:
+  shared_network:
+    driver: bridge

@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  json-write-app-1:
+    image: json-app:1.0
+    restart:
+      'no'
+    ports:
+      - '8051:8050'
+    volumes:
+      - shared_volume:/tmp
+
+  json-write-app-2:
+    image: json-app:1.0
+    restart:
+      'no'
+    ports:
+      - '8052:8050'
+    volumes:
+      - shared_volume:/tmp
+
+volumes:
+  shared_volume:
+    driver: local
