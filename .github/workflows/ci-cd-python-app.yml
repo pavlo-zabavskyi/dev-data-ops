@@ -81,7 +81,7 @@ jobs:
     needs: [build]
     permissions:
       actions: read
-      contents: read
+      contents: write
       id-token: write
 
     env:
@@ -173,3 +173,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: homework/ci-cd
