@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: hello-gitops
 spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
   rules:
     - http:
         paths:
