@@ -1,0 +1,1513 @@
+
+    
+    
+    
+    
+
+;
+    -- dbt seed --
+    
+            insert into "dbo"."raw_customers" ("id", "first_name", "last_name")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    'Michael'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '2',
+
+                    
+                    'Shawn'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '3',
+
+                    
+                    'Kathleen'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '4',
+
+                    
+                    'Jimmy'
+                    
+                    ,
+
+                    
+                    'C.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '5',
+
+                    
+                    'Katherine'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '6',
+
+                    
+                    'Sarah'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '7',
+
+                    
+                    'Martin'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '8',
+
+                    
+                    'Frank'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '9',
+
+                    
+                    'Jennifer'
+                    
+                    ,
+
+                    
+                    'F.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '10',
+
+                    
+                    'Henry'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '11',
+
+                    
+                    'Fred'
+                    
+                    ,
+
+                    
+                    'S.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '12',
+
+                    
+                    'Amy'
+                    
+                    ,
+
+                    
+                    'D.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '13',
+
+                    
+                    'Kathleen'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '14',
+
+                    
+                    'Steve'
+                    
+                    ,
+
+                    
+                    'F.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '15',
+
+                    
+                    'Teresa'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '16',
+
+                    
+                    'Amanda'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '17',
+
+                    
+                    'Kimberly'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '18',
+
+                    
+                    'Johnny'
+                    
+                    ,
+
+                    
+                    'K.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '19',
+
+                    
+                    'Virginia'
+                    
+                    ,
+
+                    
+                    'F.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '20',
+
+                    
+                    'Anna'
+                    
+                    ,
+
+                    
+                    'A.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '21',
+
+                    
+                    'Willie'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '22',
+
+                    
+                    'Sean'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '23',
+
+                    
+                    'Mildred'
+                    
+                    ,
+
+                    
+                    'A.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '24',
+
+                    
+                    'David'
+                    
+                    ,
+
+                    
+                    'G.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '25',
+
+                    
+                    'Victor'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '26',
+
+                    
+                    'Aaron'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '27',
+
+                    
+                    'Benjamin'
+                    
+                    ,
+
+                    
+                    'B.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '28',
+
+                    
+                    'Lisa'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '29',
+
+                    
+                    'Benjamin'
+                    
+                    ,
+
+                    
+                    'K.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '30',
+
+                    
+                    'Christina'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '31',
+
+                    
+                    'Jane'
+                    
+                    ,
+
+                    
+                    'G.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '32',
+
+                    
+                    'Thomas'
+                    
+                    ,
+
+                    
+                    'O.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '33',
+
+                    
+                    'Katherine'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '34',
+
+                    
+                    'Jennifer'
+                    
+                    ,
+
+                    
+                    'S.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '35',
+
+                    
+                    'Sara'
+                    
+                    ,
+
+                    
+                    'T.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '36',
+
+                    
+                    'Harold'
+                    
+                    ,
+
+                    
+                    'O.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '37',
+
+                    
+                    'Shirley'
+                    
+                    ,
+
+                    
+                    'J.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '38',
+
+                    
+                    'Dennis'
+                    
+                    ,
+
+                    
+                    'J.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '39',
+
+                    
+                    'Louise'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '40',
+
+                    
+                    'Maria'
+                    
+                    ,
+
+                    
+                    'A.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '41',
+
+                    
+                    'Gloria'
+                    
+                    ,
+
+                    
+                    'C.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '42',
+
+                    
+                    'Diana'
+                    
+                    ,
+
+                    
+                    'S.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '43',
+
+                    
+                    'Kelly'
+                    
+                    ,
+
+                    
+                    'N.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '44',
+
+                    
+                    'Jane'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '45',
+
+                    
+                    'Scott'
+                    
+                    ,
+
+                    
+                    'B.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '46',
+
+                    
+                    'Norma'
+                    
+                    ,
+
+                    
+                    'C.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '47',
+
+                    
+                    'Marie'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '48',
+
+                    
+                    'Lillian'
+                    
+                    ,
+
+                    
+                    'C.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '49',
+
+                    
+                    'Judy'
+                    
+                    ,
+
+                    
+                    'N.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '50',
+
+                    
+                    'Billy'
+                    
+                    ,
+
+                    
+                    'L.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '51',
+
+                    
+                    'Howard'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '52',
+
+                    
+                    'Laura'
+                    
+                    ,
+
+                    
+                    'F.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '53',
+
+                    
+                    'Anne'
+                    
+                    ,
+
+                    
+                    'B.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '54',
+
+                    
+                    'Rose'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '55',
+
+                    
+                    'Nicholas'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '56',
+
+                    
+                    'Joshua'
+                    
+                    ,
+
+                    
+                    'K.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '57',
+
+                    
+                    'Paul'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '58',
+
+                    
+                    'Kathryn'
+                    
+                    ,
+
+                    
+                    'K.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '59',
+
+                    
+                    'Adam'
+                    
+                    ,
+
+                    
+                    'A.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '60',
+
+                    
+                    'Norma'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '61',
+
+                    
+                    'Timothy'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '62',
+
+                    
+                    'Elizabeth'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '63',
+
+                    
+                    'Edward'
+                    
+                    ,
+
+                    
+                    'G.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '64',
+
+                    
+                    'David'
+                    
+                    ,
+
+                    
+                    'C.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '65',
+
+                    
+                    'Brenda'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '66',
+
+                    
+                    'Adam'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '67',
+
+                    
+                    'Michael'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '68',
+
+                    
+                    'Jesse'
+                    
+                    ,
+
+                    
+                    'E.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '69',
+
+                    
+                    'Janet'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '70',
+
+                    
+                    'Helen'
+                    
+                    ,
+
+                    
+                    'F.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '71',
+
+                    
+                    'Gerald'
+                    
+                    ,
+
+                    
+                    'C.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '72',
+
+                    
+                    'Kathryn'
+                    
+                    ,
+
+                    
+                    'O.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '73',
+
+                    
+                    'Alan'
+                    
+                    ,
+
+                    
+                    'B.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '74',
+
+                    
+                    'Harry'
+                    
+                    ,
+
+                    
+                    'A.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '75',
+
+                    
+                    'Andrea'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '76',
+
+                    
+                    'Barbara'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '77',
+
+                    
+                    'Anne'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '78',
+
+                    
+                    'Harry'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '79',
+
+                    
+                    'Jack'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '80',
+
+                    
+                    'Phillip'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '81',
+
+                    
+                    'Shirley'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '82',
+
+                    
+                    'Arthur'
+                    
+                    ,
+
+                    
+                    'D.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '83',
+
+                    
+                    'Virginia'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '84',
+
+                    
+                    'Christina'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '85',
+
+                    
+                    'Theresa'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '86',
+
+                    
+                    'Jason'
+                    
+                    ,
+
+                    
+                    'C.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '87',
+
+                    
+                    'Phillip'
+                    
+                    ,
+
+                    
+                    'B.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '88',
+
+                    
+                    'Adam'
+                    
+                    ,
+
+                    
+                    'T.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '89',
+
+                    
+                    'Margaret'
+                    
+                    ,
+
+                    
+                    'J.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '90',
+
+                    
+                    'Paul'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '91',
+
+                    
+                    'Todd'
+                    
+                    ,
+
+                    
+                    'W.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '92',
+
+                    
+                    'Willie'
+                    
+                    ,
+
+                    
+                    'O.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '93',
+
+                    
+                    'Frances'
+                    
+                    ,
+
+                    
+                    'R.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '94',
+
+                    
+                    'Gregory'
+                    
+                    ,
+
+                    
+                    'H.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '95',
+
+                    
+                    'Lisa'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '96',
+
+                    
+                    'Jacqueline'
+                    
+                    ,
+
+                    
+                    'A.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '97',
+
+                    
+                    'Shirley'
+                    
+                    ,
+
+                    
+                    'D.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '98',
+
+                    
+                    'Nicole'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '99',
+
+                    
+                    'Mary'
+                    
+                    ,
+
+                    
+                    'G.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '100',
+
+                    
+                    'Jean'
+                    
+                    ,
+
+                    
+                    'M.'
+                    
+                    
+
+;
+  

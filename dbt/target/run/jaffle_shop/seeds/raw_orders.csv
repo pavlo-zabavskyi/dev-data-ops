@@ -1,0 +1,1795 @@
+
+    
+    
+    
+    
+
+;
+    -- dbt seed --
+    
+            insert into "dbo"."raw_orders" ("id", "user_id", "order_date", "status")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '2018-01-01',
+
+                    
+                    'returned'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '2',
+
+                    
+                    
+                        '3',
+
+                    
+                    
+                        '2018-01-02',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '3',
+
+                    
+                    
+                        '94',
+
+                    
+                    
+                        '2018-01-04',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '4',
+
+                    
+                    
+                        '50',
+
+                    
+                    
+                        '2018-01-05',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '5',
+
+                    
+                    
+                        '64',
+
+                    
+                    
+                        '2018-01-05',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '6',
+
+                    
+                    
+                        '54',
+
+                    
+                    
+                        '2018-01-07',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '7',
+
+                    
+                    
+                        '88',
+
+                    
+                    
+                        '2018-01-09',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '8',
+
+                    
+                    
+                        '2',
+
+                    
+                    
+                        '2018-01-11',
+
+                    
+                    'returned'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '9',
+
+                    
+                    
+                        '53',
+
+                    
+                    
+                        '2018-01-12',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '10',
+
+                    
+                    
+                        '7',
+
+                    
+                    
+                        '2018-01-14',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '11',
+
+                    
+                    
+                        '99',
+
+                    
+                    
+                        '2018-01-14',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '12',
+
+                    
+                    
+                        '59',
+
+                    
+                    
+                        '2018-01-15',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '13',
+
+                    
+                    
+                        '84',
+
+                    
+                    
+                        '2018-01-17',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '14',
+
+                    
+                    
+                        '40',
+
+                    
+                    
+                        '2018-01-17',
+
+                    
+                    'returned'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '15',
+
+                    
+                    
+                        '25',
+
+                    
+                    
+                        '2018-01-17',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '16',
+
+                    
+                    
+                        '39',
+
+                    
+                    
+                        '2018-01-18',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '17',
+
+                    
+                    
+                        '71',
+
+                    
+                    
+                        '2018-01-18',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '18',
+
+                    
+                    
+                        '64',
+
+                    
+                    
+                        '2018-01-20',
+
+                    
+                    'returned'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '19',
+
+                    
+                    
+                        '54',
+
+                    
+                    
+                        '2018-01-22',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '20',
+
+                    
+                    
+                        '20',
+
+                    
+                    
+                        '2018-01-23',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '21',
+
+                    
+                    
+                        '71',
+
+                    
+                    
+                        '2018-01-23',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '22',
+
+                    
+                    
+                        '86',
+
+                    
+                    
+                        '2018-01-24',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '23',
+
+                    
+                    
+                        '22',
+
+                    
+                    
+                        '2018-01-26',
+
+                    
+                    'return_pending'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '24',
+
+                    
+                    
+                        '3',
+
+                    
+                    
+                        '2018-01-27',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '25',
+
+                    
+                    
+                        '51',
+
+                    
+                    
+                        '2018-01-28',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '26',
+
+                    
+                    
+                        '32',
+
+                    
+                    
+                        '2018-01-28',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '27',
+
+                    
+                    
+                        '94',
+
+                    
+                    
+                        '2018-01-29',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '28',
+
+                    
+                    
+                        '8',
+
+                    
+                    
+                        '2018-01-29',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '29',
+
+                    
+                    
+                        '57',
+
+                    
+                    
+                        '2018-01-31',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '30',
+
+                    
+                    
+                        '69',
+
+                    
+                    
+                        '2018-02-02',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '31',
+
+                    
+                    
+                        '16',
+
+                    
+                    
+                        '2018-02-02',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '32',
+
+                    
+                    
+                        '28',
+
+                    
+                    
+                        '2018-02-04',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '33',
+
+                    
+                    
+                        '42',
+
+                    
+                    
+                        '2018-02-04',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '34',
+
+                    
+                    
+                        '38',
+
+                    
+                    
+                        '2018-02-06',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '35',
+
+                    
+                    
+                        '80',
+
+                    
+                    
+                        '2018-02-08',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '36',
+
+                    
+                    
+                        '85',
+
+                    
+                    
+                        '2018-02-10',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '37',
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '2018-02-10',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '38',
+
+                    
+                    
+                        '51',
+
+                    
+                    
+                        '2018-02-10',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '39',
+
+                    
+                    
+                        '26',
+
+                    
+                    
+                        '2018-02-11',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '40',
+
+                    
+                    
+                        '33',
+
+                    
+                    
+                        '2018-02-13',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '41',
+
+                    
+                    
+                        '99',
+
+                    
+                    
+                        '2018-02-14',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '42',
+
+                    
+                    
+                        '92',
+
+                    
+                    
+                        '2018-02-16',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '43',
+
+                    
+                    
+                        '31',
+
+                    
+                    
+                        '2018-02-17',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '44',
+
+                    
+                    
+                        '66',
+
+                    
+                    
+                        '2018-02-17',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '45',
+
+                    
+                    
+                        '22',
+
+                    
+                    
+                        '2018-02-17',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '46',
+
+                    
+                    
+                        '6',
+
+                    
+                    
+                        '2018-02-19',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '47',
+
+                    
+                    
+                        '50',
+
+                    
+                    
+                        '2018-02-20',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '48',
+
+                    
+                    
+                        '27',
+
+                    
+                    
+                        '2018-02-21',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '49',
+
+                    
+                    
+                        '35',
+
+                    
+                    
+                        '2018-02-21',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '50',
+
+                    
+                    
+                        '51',
+
+                    
+                    
+                        '2018-02-23',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '51',
+
+                    
+                    
+                        '71',
+
+                    
+                    
+                        '2018-02-24',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '52',
+
+                    
+                    
+                        '54',
+
+                    
+                    
+                        '2018-02-25',
+
+                    
+                    'return_pending'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '53',
+
+                    
+                    
+                        '34',
+
+                    
+                    
+                        '2018-02-26',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '54',
+
+                    
+                    
+                        '54',
+
+                    
+                    
+                        '2018-02-26',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '55',
+
+                    
+                    
+                        '18',
+
+                    
+                    
+                        '2018-02-27',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '56',
+
+                    
+                    
+                        '79',
+
+                    
+                    
+                        '2018-02-28',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '57',
+
+                    
+                    
+                        '93',
+
+                    
+                    
+                        '2018-03-01',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '58',
+
+                    
+                    
+                        '22',
+
+                    
+                    
+                        '2018-03-01',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '59',
+
+                    
+                    
+                        '30',
+
+                    
+                    
+                        '2018-03-02',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '60',
+
+                    
+                    
+                        '12',
+
+                    
+                    
+                        '2018-03-03',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '61',
+
+                    
+                    
+                        '63',
+
+                    
+                    
+                        '2018-03-03',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '62',
+
+                    
+                    
+                        '57',
+
+                    
+                    
+                        '2018-03-05',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '63',
+
+                    
+                    
+                        '70',
+
+                    
+                    
+                        '2018-03-06',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '64',
+
+                    
+                    
+                        '13',
+
+                    
+                    
+                        '2018-03-07',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '65',
+
+                    
+                    
+                        '26',
+
+                    
+                    
+                        '2018-03-08',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '66',
+
+                    
+                    
+                        '36',
+
+                    
+                    
+                        '2018-03-10',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '67',
+
+                    
+                    
+                        '79',
+
+                    
+                    
+                        '2018-03-11',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '68',
+
+                    
+                    
+                        '53',
+
+                    
+                    
+                        '2018-03-11',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '69',
+
+                    
+                    
+                        '3',
+
+                    
+                    
+                        '2018-03-11',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '70',
+
+                    
+                    
+                        '8',
+
+                    
+                    
+                        '2018-03-12',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '71',
+
+                    
+                    
+                        '42',
+
+                    
+                    
+                        '2018-03-12',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '72',
+
+                    
+                    
+                        '30',
+
+                    
+                    
+                        '2018-03-14',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '73',
+
+                    
+                    
+                        '19',
+
+                    
+                    
+                        '2018-03-16',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '74',
+
+                    
+                    
+                        '9',
+
+                    
+                    
+                        '2018-03-17',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '75',
+
+                    
+                    
+                        '69',
+
+                    
+                    
+                        '2018-03-18',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '76',
+
+                    
+                    
+                        '25',
+
+                    
+                    
+                        '2018-03-20',
+
+                    
+                    'completed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '77',
+
+                    
+                    
+                        '35',
+
+                    
+                    
+                        '2018-03-21',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '78',
+
+                    
+                    
+                        '90',
+
+                    
+                    
+                        '2018-03-23',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '79',
+
+                    
+                    
+                        '52',
+
+                    
+                    
+                        '2018-03-23',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '80',
+
+                    
+                    
+                        '11',
+
+                    
+                    
+                        '2018-03-23',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '81',
+
+                    
+                    
+                        '76',
+
+                    
+                    
+                        '2018-03-23',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '82',
+
+                    
+                    
+                        '46',
+
+                    
+                    
+                        '2018-03-24',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '83',
+
+                    
+                    
+                        '54',
+
+                    
+                    
+                        '2018-03-24',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '84',
+
+                    
+                    
+                        '70',
+
+                    
+                    
+                        '2018-03-26',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '85',
+
+                    
+                    
+                        '47',
+
+                    
+                    
+                        '2018-03-26',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '86',
+
+                    
+                    
+                        '68',
+
+                    
+                    
+                        '2018-03-26',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '87',
+
+                    
+                    
+                        '46',
+
+                    
+                    
+                        '2018-03-27',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '88',
+
+                    
+                    
+                        '91',
+
+                    
+                    
+                        '2018-03-27',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '89',
+
+                    
+                    
+                        '21',
+
+                    
+                    
+                        '2018-03-28',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '90',
+
+                    
+                    
+                        '66',
+
+                    
+                    
+                        '2018-03-30',
+
+                    
+                    'shipped'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '91',
+
+                    
+                    
+                        '47',
+
+                    
+                    
+                        '2018-03-31',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '92',
+
+                    
+                    
+                        '84',
+
+                    
+                    
+                        '2018-04-02',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '93',
+
+                    
+                    
+                        '66',
+
+                    
+                    
+                        '2018-04-03',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '94',
+
+                    
+                    
+                        '63',
+
+                    
+                    
+                        '2018-04-03',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '95',
+
+                    
+                    
+                        '27',
+
+                    
+                    
+                        '2018-04-04',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '96',
+
+                    
+                    
+                        '90',
+
+                    
+                    
+                        '2018-04-06',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '97',
+
+                    
+                    
+                        '89',
+
+                    
+                    
+                        '2018-04-07',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '98',
+
+                    
+                    
+                        '41',
+
+                    
+                    
+                        '2018-04-07',
+
+                    
+                    'placed'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '99',
+
+                    
+                    
+                        '85',
+
+                    
+                    
+                        '2018-04-09',
+
+                    
+                    'placed'
+                    
+                    
+
+;
+  

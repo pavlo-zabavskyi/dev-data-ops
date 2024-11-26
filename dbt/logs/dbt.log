@@ -1,0 +1,2445 @@
+[0m22:13:16.709827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076e3f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10846d790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10846d520>]}
+
+
+============================== 22:13:16.713114 | 32936f7b-3f09-4732-a3d8-fd5b45c82bc3 ==============================
+[0m22:13:16.713114 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:13:16.713462 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:13:16.715197 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'jaffle_shop'
+[0m22:13:16.716559 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.05398525, "process_in_blocks": "0", "process_kernel_time": 0.129456, "process_mem_max_rss": "93978624", "process_out_blocks": "0", "process_user_time": 0.602839}
+[0m22:13:16.716865 [debug] [MainThread]: Command `dbt seed` failed at 22:13:16.716813 after 0.05 seconds
+[0m22:13:16.717055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c82720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108428cb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10846d4f0>]}
+[0m22:13:16.717235 [debug] [MainThread]: Flushing usage events
+[0m22:13:52.604549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ef3d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066fe6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069dd610>]}
+
+
+============================== 22:13:52.607899 | 86912c82-c633-4d2d-a950-552aa096d738 ==============================
+[0m22:13:52.607899 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:13:52.608262 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:13:52.846319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f92a80>]}
+[0m22:13:52.870818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10733b9e0>]}
+[0m22:13:52.871544 [info ] [MainThread]: Registered adapter: synapse=1.8.1
+[0m22:13:52.934842 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m22:13:52.935518 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:13:52.935756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073eb980>]}
+[0m22:13:53.530020 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m22:13:53.530388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107927740>]}
+[0m22:13:53.651349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077ebb60>]}
+[0m22:13:53.709289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077be9c0>]}
+[0m22:13:53.709590 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 521 macros
+[0m22:13:53.709770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107779ac0>]}
+[0m22:13:53.710863 [info ] [MainThread]: 
+[0m22:13:53.711192 [debug] [MainThread]: Acquiring new synapse connection 'master'
+[0m22:13:53.714007 [debug] [ThreadPool]: Acquiring new synapse connection 'list_jaffle_shop'
+[0m22:13:53.719582 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop"
+[0m22:13:53.719799 [debug] [ThreadPool]: On list_jaffle_shop: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop"} */
+select  name as [schema]
+    from sys.schemas
+  
+[0m22:13:53.719947 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:13:53.720294 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:13:54.765733 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:13:54.817253 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m22:13:54.825741 [debug] [ThreadPool]: On list_jaffle_shop: Close
+[0m22:13:54.829316 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_jaffle_shop, now list_jaffle_shop_dbo)
+[0m22:13:54.840335 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop_dbo"
+[0m22:13:54.840781 [debug] [ThreadPool]: On list_jaffle_shop_dbo: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop_dbo"} */
+
+    select
+      table_catalog as [database],
+      table_name as [name],
+      table_schema as [schema],
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+
+    from INFORMATION_SCHEMA.TABLES
+    where table_schema like 'dbo'
+      and table_catalog like 'jaffle_shop'
+  
+[0m22:13:54.841158 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:13:54.841674 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:13:54.842235 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:13:54.905718 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:13:54.908603 [debug] [ThreadPool]: On list_jaffle_shop_dbo: ROLLBACK
+[0m22:13:54.909167 [debug] [ThreadPool]: On list_jaffle_shop_dbo: Close
+[0m22:13:54.911225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072d3230>]}
+[0m22:13:54.912052 [debug] [MainThread]: On master: COMMIT
+[0m22:13:54.912694 [info ] [MainThread]: Concurrency: 1 threads (target='jaffle_shop')
+[0m22:13:54.913247 [info ] [MainThread]: 
+[0m22:13:54.916840 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_customers
+[0m22:13:54.917588 [info ] [Thread-1 (]: 1 of 3 START seed file dbo.raw_customers ....................................... [RUN]
+[0m22:13:54.918148 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_jaffle_shop_dbo, now seed.jaffle_shop.raw_customers)
+[0m22:13:54.918551 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_customers
+[0m22:13:54.918924 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_customers
+[0m22:13:54.945153 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_customers"
+[0m22:13:54.945591 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "seed.jaffle_shop.raw_customers"} */
+
+        create table "dbo"."raw_customers" ("id" int,"first_name" varchar(16),"last_name" varchar(16))
+        WITH (DISTRIBUTION = ROUND_ROBIN, HEAP)
+    
+[0m22:13:54.946624 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:13:54.947035 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:13:54.947454 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:13:55.370443 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:13:55.401495 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_customers"
+[0m22:13:55.402499 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: 
+            insert into "dbo"."raw_customers" ("id", "first_name", "last_name")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    'Michael'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '2',
+
+                    
+                    'Shawn'
+               ...
+[0m22:13:56.042984 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:13:56.053862 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_customers"
+[0m22:13:56.074545 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: COMMIT
+[0m22:13:56.076800 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: Close
+[0m22:13:56.077921 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052c0a70>]}
+[0m22:13:56.078379 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file dbo.raw_customers ................................... [[32mINSERT 100[0m in 1.16s]
+[0m22:13:56.078866 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_customers
+[0m22:13:56.079158 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_orders
+[0m22:13:56.079563 [info ] [Thread-1 (]: 2 of 3 START seed file dbo.raw_orders .......................................... [RUN]
+[0m22:13:56.079893 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_customers, now seed.jaffle_shop.raw_orders)
+[0m22:13:56.080135 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_orders
+[0m22:13:56.080468 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_orders
+[0m22:13:56.085439 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_orders"
+[0m22:13:56.085723 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "seed.jaffle_shop.raw_orders"} */
+
+        create table "dbo"."raw_orders" ("id" int,"user_id" int,"order_date" date,"status" varchar(16))
+        WITH (DISTRIBUTION = ROUND_ROBIN, HEAP)
+    
+[0m22:13:56.085957 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:13:56.086209 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:13:56.086600 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:13:56.361873 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:13:56.376869 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_orders"
+[0m22:13:56.377605 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: 
+            insert into "dbo"."raw_orders" ("id", "user_id", "order_date", "status")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '2018-01-01',
+
+                    
+                    'returned'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '...
+[0m22:13:56.992839 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:13:56.995541 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_orders"
+[0m22:13:56.999499 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: COMMIT
+[0m22:13:57.000553 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: Close
+[0m22:13:57.001260 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a3c920>]}
+[0m22:13:57.001913 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file dbo.raw_orders ...................................... [[32mINSERT 99[0m in 0.92s]
+[0m22:13:57.002605 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_orders
+[0m22:13:57.003106 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_payments
+[0m22:13:57.003755 [info ] [Thread-1 (]: 3 of 3 START seed file dbo.raw_payments ........................................ [RUN]
+[0m22:13:57.004276 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_orders, now seed.jaffle_shop.raw_payments)
+[0m22:13:57.004665 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_payments
+[0m22:13:57.005047 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_payments
+[0m22:13:57.012057 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_payments"
+[0m22:13:57.012455 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "seed.jaffle_shop.raw_payments"} */
+
+        create table "dbo"."raw_payments" ("id" int,"order_id" int,"payment_method" varchar(16),"amount" int)
+        WITH (DISTRIBUTION = ROUND_ROBIN, HEAP)
+    
+[0m22:13:57.012858 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:13:57.013199 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:13:57.013713 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:13:57.291239 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:13:57.306710 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_payments"
+[0m22:13:57.307362 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: 
+            insert into "dbo"."raw_payments" ("id", "order_id", "payment_method", "amount")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '1',
+
+                    
+                    'credit_card'
+                    
+                    ,
+
+                    
+                    
+                        '1000' union all
+select 
+
+                    
+                    
+                     ...
+[0m22:13:58.097308 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:13:58.099767 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_payments"
+[0m22:13:58.103837 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: COMMIT
+[0m22:13:58.104908 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: Close
+[0m22:13:58.105593 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '86912c82-c633-4d2d-a950-552aa096d738', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a696d0>]}
+[0m22:13:58.106245 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file dbo.raw_payments .................................... [[32mINSERT 113[0m in 1.10s]
+[0m22:13:58.106926 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_payments
+[0m22:13:58.108729 [debug] [MainThread]: On master: COMMIT
+[0m22:13:58.109406 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:13:58.109725 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_payments' was properly closed.
+[0m22:13:58.110076 [info ] [MainThread]: 
+[0m22:13:58.110430 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 4.40 seconds (4.40s).
+[0m22:13:58.111522 [debug] [MainThread]: Command end result
+[0m22:13:58.155004 [info ] [MainThread]: 
+[0m22:13:58.155362 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:13:58.155558 [info ] [MainThread]: 
+[0m22:13:58.155761 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m22:13:58.158079 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 5.5957875, "process_in_blocks": "0", "process_kernel_time": 0.268231, "process_mem_max_rss": "138723328", "process_out_blocks": "0", "process_user_time": 1.809079}
+[0m22:13:58.158613 [debug] [MainThread]: Command `dbt seed` succeeded at 22:13:58.158546 after 5.60 seconds
+[0m22:13:58.158889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10637a3c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078c57f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077ab590>]}
+[0m22:13:58.159124 [debug] [MainThread]: Flushing usage events
+[0m22:15:03.714826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050d0c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105228b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10526d6d0>]}
+
+
+============================== 22:15:03.719009 | c7160866-23fa-462b-81fd-0eb584c33b3d ==============================
+[0m22:15:03.719009 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:15:03.719355 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'version_check': 'True', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m22:15:03.954285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106694590>]}
+[0m22:15:03.978129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10662cec0>]}
+[0m22:15:03.978751 [info ] [MainThread]: Registered adapter: synapse=1.8.1
+[0m22:15:04.042308 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m22:15:04.115151 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:15:04.115408 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:15:04.137701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b91ac0>]}
+[0m22:15:04.198861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d43980>]}
+[0m22:15:04.199203 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 521 macros
+[0m22:15:04.199392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c48410>]}
+[0m22:15:04.200493 [info ] [MainThread]: 
+[0m22:15:04.200835 [debug] [MainThread]: Acquiring new synapse connection 'master'
+[0m22:15:04.203281 [debug] [ThreadPool]: Acquiring new synapse connection 'list_jaffle_shop'
+[0m22:15:04.209030 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop"
+[0m22:15:04.209215 [debug] [ThreadPool]: On list_jaffle_shop: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop"} */
+select  name as [schema]
+    from sys.schemas
+  
+[0m22:15:04.209360 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:04.209537 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:05.206562 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:05.252021 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m22:15:05.256840 [debug] [ThreadPool]: On list_jaffle_shop: Close
+[0m22:15:05.259491 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_jaffle_shop, now list_jaffle_shop_dbo)
+[0m22:15:05.270362 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop_dbo"
+[0m22:15:05.270865 [debug] [ThreadPool]: On list_jaffle_shop_dbo: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop_dbo"} */
+
+    select
+      table_catalog as [database],
+      table_name as [name],
+      table_schema as [schema],
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+
+    from INFORMATION_SCHEMA.TABLES
+    where table_schema like 'dbo'
+      and table_catalog like 'jaffle_shop'
+  
+[0m22:15:05.271216 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:15:05.271579 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:05.272126 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:05.318341 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:15:05.320066 [debug] [ThreadPool]: On list_jaffle_shop_dbo: ROLLBACK
+[0m22:15:05.320482 [debug] [ThreadPool]: On list_jaffle_shop_dbo: Close
+[0m22:15:05.321233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b45730>]}
+[0m22:15:05.321943 [debug] [MainThread]: On master: COMMIT
+[0m22:15:05.322518 [info ] [MainThread]: Concurrency: 1 threads (target='jaffle_shop')
+[0m22:15:05.322947 [info ] [MainThread]: 
+[0m22:15:05.326081 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_customers
+[0m22:15:05.326641 [info ] [Thread-1 (]: 1 of 3 START seed file dbo.raw_customers ....................................... [RUN]
+[0m22:15:05.327094 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_jaffle_shop_dbo, now seed.jaffle_shop.raw_customers)
+[0m22:15:05.327437 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_customers
+[0m22:15:05.327782 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_customers
+[0m22:15:05.353055 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_customers"
+[0m22:15:05.353455 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "seed.jaffle_shop.raw_customers"} */
+
+        create table "dbo"."raw_customers" ("id" int,"first_name" varchar(16),"last_name" varchar(16))
+        WITH (DISTRIBUTION = ROUND_ROBIN, HEAP)
+    
+[0m22:15:05.353829 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:05.354127 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:05.354538 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:05.641072 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:05.670233 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_customers"
+[0m22:15:05.670792 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: 
+            insert into "dbo"."raw_customers" ("id", "first_name", "last_name")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    'Michael'
+                    
+                    ,
+
+                    
+                    'P.'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '2',
+
+                    
+                    'Shawn'
+               ...
+[0m22:15:06.332335 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:06.345307 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_customers"
+[0m22:15:06.366075 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: COMMIT
+[0m22:15:06.368162 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_customers: Close
+[0m22:15:06.369225 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dc8f80>]}
+[0m22:15:06.369892 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file dbo.raw_customers ................................... [[32mINSERT 100[0m in 1.04s]
+[0m22:15:06.370360 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_customers
+[0m22:15:06.370670 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_orders
+[0m22:15:06.371106 [info ] [Thread-1 (]: 2 of 3 START seed file dbo.raw_orders .......................................... [RUN]
+[0m22:15:06.371502 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_customers, now seed.jaffle_shop.raw_orders)
+[0m22:15:06.371776 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_orders
+[0m22:15:06.372037 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_orders
+[0m22:15:06.377010 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_orders"
+[0m22:15:06.377364 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "seed.jaffle_shop.raw_orders"} */
+
+        create table "dbo"."raw_orders" ("id" int,"user_id" int,"order_date" date,"status" varchar(16))
+        WITH (DISTRIBUTION = ROUND_ROBIN, HEAP)
+    
+[0m22:15:06.377811 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:06.378144 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:06.378951 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:06.633350 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:06.669050 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_orders"
+[0m22:15:06.669484 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: 
+            insert into "dbo"."raw_orders" ("id", "user_id", "order_date", "status")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '2018-01-01',
+
+                    
+                    'returned'
+                    
+                     union all
+select 
+
+                    
+                    
+                        '...
+[0m22:15:07.468285 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:07.470552 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_orders"
+[0m22:15:07.473648 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: COMMIT
+[0m22:15:07.474573 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_orders: Close
+[0m22:15:07.475225 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d69a00>]}
+[0m22:15:07.475877 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file dbo.raw_orders ...................................... [[32mINSERT 99[0m in 1.10s]
+[0m22:15:07.476561 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_orders
+[0m22:15:07.477081 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_payments
+[0m22:15:07.477789 [info ] [Thread-1 (]: 3 of 3 START seed file dbo.raw_payments ........................................ [RUN]
+[0m22:15:07.478482 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_orders, now seed.jaffle_shop.raw_payments)
+[0m22:15:07.479199 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_payments
+[0m22:15:07.481176 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_payments
+[0m22:15:07.490498 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_payments"
+[0m22:15:07.491038 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "seed.jaffle_shop.raw_payments"} */
+
+        create table "dbo"."raw_payments" ("id" int,"order_id" int,"payment_method" varchar(16),"amount" int)
+        WITH (DISTRIBUTION = ROUND_ROBIN, HEAP)
+    
+[0m22:15:07.491375 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:07.491915 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:07.492809 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:07.770202 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:07.793612 [debug] [Thread-1 (]: Using synapse connection "seed.jaffle_shop.raw_payments"
+[0m22:15:07.794066 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: 
+            insert into "dbo"."raw_payments" ("id", "order_id", "payment_method", "amount")
+            select 
+
+                    
+                    
+                        '1',
+
+                    
+                    
+                        '1',
+
+                    
+                    'credit_card'
+                    
+                    ,
+
+                    
+                    
+                        '1000' union all
+select 
+
+                    
+                    
+                     ...
+[0m22:15:08.392531 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:08.395555 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop.raw_payments"
+[0m22:15:08.399859 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: COMMIT
+[0m22:15:08.401002 [debug] [Thread-1 (]: On seed.jaffle_shop.raw_payments: Close
+[0m22:15:08.401750 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7160866-23fa-462b-81fd-0eb584c33b3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d52ed0>]}
+[0m22:15:08.402446 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file dbo.raw_payments .................................... [[32mINSERT 113[0m in 0.92s]
+[0m22:15:08.403140 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_payments
+[0m22:15:08.404806 [debug] [MainThread]: On master: COMMIT
+[0m22:15:08.405510 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:15:08.406005 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_payments' was properly closed.
+[0m22:15:08.406492 [info ] [MainThread]: 
+[0m22:15:08.406967 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 4.21 seconds (4.21s).
+[0m22:15:08.408060 [debug] [MainThread]: Command end result
+[0m22:15:08.452422 [info ] [MainThread]: 
+[0m22:15:08.452866 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:15:08.453117 [info ] [MainThread]: 
+[0m22:15:08.453359 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m22:15:08.455713 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 4.789006, "process_in_blocks": "0", "process_kernel_time": 0.268561, "process_mem_max_rss": "130760704", "process_out_blocks": "0", "process_user_time": 1.160331}
+[0m22:15:08.456150 [debug] [MainThread]: Command `dbt seed` succeeded at 22:15:08.456093 after 4.79 seconds
+[0m22:15:08.456632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105228b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10526d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10526d220>]}
+[0m22:15:08.456960 [debug] [MainThread]: Flushing usage events
+[0m22:15:14.276813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d31880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e6d910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e6d580>]}
+
+
+============================== 22:15:14.280460 | 240d9453-368c-4a3c-aaeb-93835966a6e1 ==============================
+[0m22:15:14.280460 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:15:14.280817 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:15:14.493031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106402ab0>]}
+[0m22:15:14.517772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101abe90>]}
+[0m22:15:14.519069 [info ] [MainThread]: Registered adapter: synapse=1.8.1
+[0m22:15:14.584328 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m22:15:14.657557 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:15:14.657843 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:15:14.680644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c44770>]}
+[0m22:15:14.735179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ce18b0>]}
+[0m22:15:14.735574 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 521 macros
+[0m22:15:14.735795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10787bec0>]}
+[0m22:15:14.736968 [info ] [MainThread]: 
+[0m22:15:14.737329 [debug] [MainThread]: Acquiring new synapse connection 'master'
+[0m22:15:14.740011 [debug] [ThreadPool]: Acquiring new synapse connection 'list_jaffle_shop'
+[0m22:15:14.745958 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop"
+[0m22:15:14.746205 [debug] [ThreadPool]: On list_jaffle_shop: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop"} */
+select  name as [schema]
+    from sys.schemas
+  
+[0m22:15:14.746365 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:14.746624 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:15.591431 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:15.633048 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m22:15:15.636867 [debug] [ThreadPool]: On list_jaffle_shop: Close
+[0m22:15:15.640338 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_jaffle_shop, now list_jaffle_shop_dbo)
+[0m22:15:15.651443 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop_dbo"
+[0m22:15:15.651918 [debug] [ThreadPool]: On list_jaffle_shop_dbo: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop_dbo"} */
+
+    select
+      table_catalog as [database],
+      table_name as [name],
+      table_schema as [schema],
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+
+    from INFORMATION_SCHEMA.TABLES
+    where table_schema like 'dbo'
+      and table_catalog like 'jaffle_shop'
+  
+[0m22:15:15.652276 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:15:15.652651 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:15.653188 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:15.702069 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:15:15.704330 [debug] [ThreadPool]: On list_jaffle_shop_dbo: ROLLBACK
+[0m22:15:15.705059 [debug] [ThreadPool]: On list_jaffle_shop_dbo: Close
+[0m22:15:15.706598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e2f110>]}
+[0m22:15:15.707515 [debug] [MainThread]: On master: COMMIT
+[0m22:15:15.708587 [info ] [MainThread]: Concurrency: 1 threads (target='jaffle_shop')
+[0m22:15:15.709179 [info ] [MainThread]: 
+[0m22:15:15.712646 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m22:15:15.713534 [info ] [Thread-1 (]: 1 of 5 START sql view model dbo.stg_customers .................................. [RUN]
+[0m22:15:15.714065 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_jaffle_shop_dbo, now model.jaffle_shop.stg_customers)
+[0m22:15:15.714441 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m22:15:15.722639 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m22:15:15.723998 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m22:15:15.742204 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_customers"
+[0m22:15:15.743067 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.stg_customers"
+[0m22:15:15.743322 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.stg_customers"} */
+
+
+  
+
+  EXEC('create view "dbo"."stg_customers" as with source as (
+    select * from "dbo"."raw_customers"
+
+),
+
+renamed as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from source
+
+)
+
+select * from renamed;');
+
+
+[0m22:15:15.743553 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:15.743779 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:15.744234 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:15.834836 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:15.848200 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: COMMIT
+[0m22:15:15.850097 [debug] [Thread-1 (]: On model.jaffle_shop.stg_customers: Close
+[0m22:15:15.851068 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110b60f0>]}
+[0m22:15:15.851517 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbo.stg_customers ............................. [[32mOK[0m in 0.14s]
+[0m22:15:15.851930 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m22:15:15.852212 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_orders
+[0m22:15:15.852636 [info ] [Thread-1 (]: 2 of 5 START sql view model dbo.stg_orders ..................................... [RUN]
+[0m22:15:15.853006 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers, now model.jaffle_shop.stg_orders)
+[0m22:15:15.853268 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m22:15:15.855444 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m22:15:15.856065 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_orders
+[0m22:15:15.858129 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+[0m22:15:15.858716 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.stg_orders"
+[0m22:15:15.858952 [debug] [Thread-1 (]: On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.stg_orders"} */
+
+
+  
+
+  EXEC('create view "dbo"."stg_orders" as with source as (
+    select * from "dbo"."raw_orders"
+
+),
+
+renamed as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from source
+
+)
+
+select * from renamed;');
+
+
+[0m22:15:15.859161 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:15.859370 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:15.859729 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:15.954360 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:15.956022 [debug] [Thread-1 (]: On model.jaffle_shop.stg_orders: COMMIT
+[0m22:15:15.956707 [debug] [Thread-1 (]: On model.jaffle_shop.stg_orders: Close
+[0m22:15:15.957172 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11106f620>]}
+[0m22:15:15.957720 [info ] [Thread-1 (]: 2 of 5 OK created sql view model dbo.stg_orders ................................ [[32mOK[0m in 0.10s]
+[0m22:15:15.958213 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_orders
+[0m22:15:15.958567 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_payments
+[0m22:15:15.959210 [info ] [Thread-1 (]: 3 of 5 START sql view model dbo.stg_payments ................................... [RUN]
+[0m22:15:15.959760 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_orders, now model.jaffle_shop.stg_payments)
+[0m22:15:15.960139 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m22:15:15.962911 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m22:15:15.963569 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_payments
+[0m22:15:15.965754 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_payments"
+[0m22:15:15.966316 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.stg_payments"
+[0m22:15:15.966609 [debug] [Thread-1 (]: On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.stg_payments"} */
+
+
+  
+
+  EXEC('create view "dbo"."stg_payments" as with source as (
+    select * from "dbo"."raw_payments"
+
+),
+
+renamed as (
+
+    select
+        id as payment_id,
+        order_id,
+        payment_method,
+
+        -- `amount` is currently stored in cents, so we convert it to dollars
+        amount / 100 as amount
+
+    from source
+
+)
+
+select * from renamed;');
+
+
+[0m22:15:15.966868 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:15.967135 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:15.967545 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:16.059862 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:16.061781 [debug] [Thread-1 (]: On model.jaffle_shop.stg_payments: COMMIT
+[0m22:15:16.062521 [debug] [Thread-1 (]: On model.jaffle_shop.stg_payments: Close
+[0m22:15:16.063003 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11154e990>]}
+[0m22:15:16.063587 [info ] [Thread-1 (]: 3 of 5 OK created sql view model dbo.stg_payments .............................. [[32mOK[0m in 0.10s]
+[0m22:15:16.064135 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_payments
+[0m22:15:16.064916 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m22:15:16.065471 [info ] [Thread-1 (]: 4 of 5 START sql table model dbo.customers ..................................... [RUN]
+[0m22:15:16.066000 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_payments, now model.jaffle_shop.customers)
+[0m22:15:16.066375 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m22:15:16.069988 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m22:15:16.071013 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m22:15:16.086299 [debug] [Thread-1 (]: Applying DROP to: "dbo"."customers__dbt_tmp_vw"
+[0m22:15:16.088322 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.customers"
+[0m22:15:16.088615 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.customers"} */
+
+  
+  if object_id ('"dbo"."customers__dbt_tmp_vw"','V') is not null
+    drop view "dbo"."customers__dbt_tmp_vw"
+
+[0m22:15:16.088859 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:16.089108 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:16.089500 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:16.142592 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:16.156351 [debug] [Thread-1 (]: Applying DROP to: "dbo"."customers__dbt_tmp_vw"
+[0m22:15:16.156826 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.customers"
+[0m22:15:16.157130 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.customers"} */
+
+  
+  if object_id ('"dbo"."customers__dbt_tmp_vw"','V') is not null
+    drop view "dbo"."customers__dbt_tmp_vw"
+
+[0m22:15:16.209652 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:16.210713 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.customers"
+[0m22:15:16.211335 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.customers"
+[0m22:15:16.211639 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.customers"} */
+
+  
+    
+
+  
+
+  EXEC('create view "dbo"."customers__dbt_tmp_vw" as with customers as (
+
+    select * from "dbo"."stg_customers"
+
+),
+
+orders as (
+
+    select * from "dbo"."stg_orders"
+
+),
+
+payments as (
+
+    select * from "dbo"."stg_payments"
+
+),
+
+customer_orders as (
+
+        select
+        customer_id,
+
+        min(order_date) as first_order,
+        max(order_date) as most_recent_order,
+        count(order_id) as number_of_orders
+    from orders
+
+    group by customer_id
+
+),
+
+customer_payments as (
+
+    select
+        orders.customer_id,
+        sum(amount) as total_amount
+
+    from payments
+
+    left join orders on
+         payments.order_id = orders.order_id
+
+    group by orders.customer_id
+
+),
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order,
+        customer_orders.most_recent_order,
+        customer_orders.number_of_orders,
+        customer_payments.total_amount as customer_lifetime_value
+
+    from customers
+
+    left join customer_orders
+        on customers.customer_id = customer_orders.customer_id
+
+    left join customer_payments
+        on  customers.customer_id = customer_payments.customer_id
+
+)
+
+select * from final;');
+
+
+    
+
+    
+        EXEC('CREATE TABLE [jaffle_shop].[dbo].[customers]WITH(DISTRIBUTION = ROUND_ROBIN,CLUSTERED COLUMNSTORE INDEX) AS (SELECT * FROM [jaffle_shop].[dbo].[customers__dbt_tmp_vw]);');
+    
+    
+
+  
+[0m22:15:21.591404 [debug] [Thread-1 (]: SQL status: OK in 5.000 seconds
+[0m22:15:21.599064 [debug] [Thread-1 (]: Applying DROP to: "dbo"."customers__dbt_tmp_vw"
+[0m22:15:21.600116 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.customers"
+[0m22:15:21.600669 [debug] [Thread-1 (]: On model.jaffle_shop.customers: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.customers"} */
+
+  
+  if object_id ('"dbo"."customers__dbt_tmp_vw"','V') is not null
+    drop view "dbo"."customers__dbt_tmp_vw"
+
+[0m22:15:21.718774 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:21.724075 [debug] [Thread-1 (]: On model.jaffle_shop.customers: COMMIT
+[0m22:15:21.727818 [debug] [Thread-1 (]: On model.jaffle_shop.customers: Close
+[0m22:15:21.728681 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111555ee0>]}
+[0m22:15:21.729559 [info ] [Thread-1 (]: 4 of 5 OK created sql table model dbo.customers ................................ [[32mOK[0m in 5.66s]
+[0m22:15:21.730275 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m22:15:21.730730 [debug] [Thread-1 (]: Began running node model.jaffle_shop.orders
+[0m22:15:21.731495 [info ] [Thread-1 (]: 5 of 5 START sql table model dbo.orders ........................................ [RUN]
+[0m22:15:21.732180 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.customers, now model.jaffle_shop.orders)
+[0m22:15:21.732630 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.orders
+[0m22:15:21.737444 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.orders"
+[0m22:15:21.738242 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.orders
+[0m22:15:21.741097 [debug] [Thread-1 (]: Applying DROP to: "dbo"."orders__dbt_tmp_vw"
+[0m22:15:21.741524 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.orders"
+[0m22:15:21.741751 [debug] [Thread-1 (]: On model.jaffle_shop.orders: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.orders"} */
+
+  
+  if object_id ('"dbo"."orders__dbt_tmp_vw"','V') is not null
+    drop view "dbo"."orders__dbt_tmp_vw"
+
+[0m22:15:21.742012 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:21.742311 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:21.742767 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:21.799290 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:21.804435 [debug] [Thread-1 (]: Applying DROP to: "dbo"."orders__dbt_tmp_vw"
+[0m22:15:21.805073 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.orders"
+[0m22:15:21.805495 [debug] [Thread-1 (]: On model.jaffle_shop.orders: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.orders"} */
+
+  
+  if object_id ('"dbo"."orders__dbt_tmp_vw"','V') is not null
+    drop view "dbo"."orders__dbt_tmp_vw"
+
+[0m22:15:21.858876 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:21.862433 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.orders"
+[0m22:15:21.863938 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.orders"
+[0m22:15:21.864656 [debug] [Thread-1 (]: On model.jaffle_shop.orders: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.orders"} */
+
+  
+    
+
+  
+
+  EXEC('create view "dbo"."orders__dbt_tmp_vw" as 
+
+with orders as (
+
+    select * from "dbo"."stg_orders"
+
+),
+
+payments as (
+
+    select * from "dbo"."stg_payments"
+
+),
+
+order_payments as (
+
+    select
+        order_id,
+
+        sum(case when payment_method = ''credit_card'' then amount else 0 end) as credit_card_amount,
+        sum(case when payment_method = ''coupon'' then amount else 0 end) as coupon_amount,
+        sum(case when payment_method = ''bank_transfer'' then amount else 0 end) as bank_transfer_amount,
+        sum(case when payment_method = ''gift_card'' then amount else 0 end) as gift_card_amount,
+        sum(amount) as total_amount
+
+    from payments
+
+    group by order_id
+
+),
+
+final as (
+
+    select
+        orders.order_id,
+        orders.customer_id,
+        orders.order_date,
+        orders.status,
+
+        order_payments.credit_card_amount,
+
+        order_payments.coupon_amount,
+
+        order_payments.bank_transfer_amount,
+
+        order_payments.gift_card_amount,
+
+        order_payments.total_amount as amount
+
+    from orders
+
+
+    left join order_payments
+        on orders.order_id = order_payments.order_id
+
+)
+
+select * from final;');
+
+
+    
+
+    
+        EXEC('CREATE TABLE [jaffle_shop].[dbo].[orders]WITH(DISTRIBUTION = ROUND_ROBIN,CLUSTERED COLUMNSTORE INDEX) AS (SELECT * FROM [jaffle_shop].[dbo].[orders__dbt_tmp_vw]);');
+    
+    
+
+  
+[0m22:15:24.974469 [debug] [Thread-1 (]: SQL status: OK in 3.000 seconds
+[0m22:15:24.982357 [debug] [Thread-1 (]: Applying DROP to: "dbo"."orders__dbt_tmp_vw"
+[0m22:15:24.983393 [debug] [Thread-1 (]: Using synapse connection "model.jaffle_shop.orders"
+[0m22:15:24.983929 [debug] [Thread-1 (]: On model.jaffle_shop.orders: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "model.jaffle_shop.orders"} */
+
+  
+  if object_id ('"dbo"."orders__dbt_tmp_vw"','V') is not null
+    drop view "dbo"."orders__dbt_tmp_vw"
+
+[0m22:15:25.100206 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:25.105249 [debug] [Thread-1 (]: On model.jaffle_shop.orders: COMMIT
+[0m22:15:25.106988 [debug] [Thread-1 (]: On model.jaffle_shop.orders: Close
+[0m22:15:25.107817 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '240d9453-368c-4a3c-aaeb-93835966a6e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e2da30>]}
+[0m22:15:25.108770 [info ] [Thread-1 (]: 5 of 5 OK created sql table model dbo.orders ................................... [[32mOK[0m in 3.38s]
+[0m22:15:25.109630 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.orders
+[0m22:15:25.111077 [debug] [MainThread]: On master: COMMIT
+[0m22:15:25.111538 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:15:25.111839 [debug] [MainThread]: Connection 'model.jaffle_shop.orders' was properly closed.
+[0m22:15:25.112297 [info ] [MainThread]: 
+[0m22:15:25.112687 [info ] [MainThread]: Finished running 3 view models, 2 table models in 0 hours 0 minutes and 10.37 seconds (10.37s).
+[0m22:15:25.114005 [debug] [MainThread]: Command end result
+[0m22:15:25.147219 [info ] [MainThread]: 
+[0m22:15:25.147566 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:15:25.147810 [info ] [MainThread]: 
+[0m22:15:25.148091 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m22:15:25.149936 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.909994, "process_in_blocks": "0", "process_kernel_time": 0.233331, "process_mem_max_rss": "132349952", "process_out_blocks": "0", "process_user_time": 1.216651}
+[0m22:15:25.150280 [debug] [MainThread]: Command `dbt run` succeeded at 22:15:25.150223 after 10.91 seconds
+[0m22:15:25.150534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076b8fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11013e630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110829310>]}
+[0m22:15:25.150756 [debug] [MainThread]: Flushing usage events
+[0m22:15:29.921337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052419d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106131a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106131760>]}
+
+
+============================== 22:15:29.924924 | 03c2fb94-abae-4af4-9b11-23f83bf64d40 ==============================
+[0m22:15:29.924924 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:15:29.925298 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:15:30.127254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03c2fb94-abae-4af4-9b11-23f83bf64d40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106809ca0>]}
+[0m22:15:30.150994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03c2fb94-abae-4af4-9b11-23f83bf64d40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106111970>]}
+[0m22:15:30.151709 [info ] [MainThread]: Registered adapter: synapse=1.8.1
+[0m22:15:30.216904 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m22:15:30.294293 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:15:30.294581 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:15:30.317337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '03c2fb94-abae-4af4-9b11-23f83bf64d40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051bb410>]}
+[0m22:15:30.380647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '03c2fb94-abae-4af4-9b11-23f83bf64d40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fa98b0>]}
+[0m22:15:30.381011 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 521 macros
+[0m22:15:30.381414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03c2fb94-abae-4af4-9b11-23f83bf64d40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cbabd0>]}
+[0m22:15:30.382685 [info ] [MainThread]: 
+[0m22:15:30.383054 [debug] [MainThread]: Acquiring new synapse connection 'master'
+[0m22:15:30.385570 [debug] [ThreadPool]: Acquiring new synapse connection 'list_jaffle_shop'
+[0m22:15:30.391806 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop"
+[0m22:15:30.392080 [debug] [ThreadPool]: On list_jaffle_shop: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop"} */
+select  name as [schema]
+    from sys.schemas
+  
+[0m22:15:30.392241 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:30.392417 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:30.471696 [debug] [ThreadPool]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop"} */
+select  name as [schema]
+    from sys.schemas
+  
+[0m22:15:30.472383 [debug] [ThreadPool]: fabric adapter: Rolling back transaction.
+[0m22:15:30.472597 [debug] [ThreadPool]: On list_jaffle_shop: No close available on handle
+[0m22:15:30.472853 [debug] [ThreadPool]: fabric adapter: Error running SQL: macro list_schemas
+[0m22:15:30.472990 [debug] [ThreadPool]: fabric adapter: Rolling back transaction.
+[0m22:15:30.473490 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:15:30.473721 [debug] [MainThread]: Connection 'list_jaffle_shop' was properly closed.
+[0m22:15:30.473960 [info ] [MainThread]: 
+[0m22:15:30.474176 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.09 seconds (0.09s).
+[0m22:15:30.474521 [error] [MainThread]: Encountered an error:
+
+[0m22:15:30.477831 [error] [MainThread]: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/main.py", line 569, in run
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/runnable.py", line 526, in run
+    result = self.execute_with_hooks(selected_uids)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/runnable.py", line 486, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/run.py", line 459, in before_run
+    self.create_schemas(adapter, required_schemas)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/runnable.py", line 626, in create_schemas
+    for ls_future in as_completed(list_futures):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 243, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 634, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 334, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+[0m22:15:30.479572 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.5963378, "process_in_blocks": "0", "process_kernel_time": 0.197469, "process_mem_max_rss": "121094144", "process_out_blocks": "0", "process_user_time": 0.926073}
+[0m22:15:30.479933 [debug] [MainThread]: Command `dbt run` failed at 22:15:30.479879 after 0.60 seconds
+[0m22:15:30.480225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052419d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10558cdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107128890>]}
+[0m22:15:30.480515 [debug] [MainThread]: Flushing usage events
+[0m22:15:34.743926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112790bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a6d970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a6d6a0>]}
+
+
+============================== 22:15:34.748695 | 7a7e6f28-dd1a-4c9a-9d84-92225e889d90 ==============================
+[0m22:15:34.748695 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:15:34.749106 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:15:34.960318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7a7e6f28-dd1a-4c9a-9d84-92225e889d90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113460e90>]}
+[0m22:15:34.983520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7a7e6f28-dd1a-4c9a-9d84-92225e889d90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107abdc10>]}
+[0m22:15:34.984282 [info ] [MainThread]: Registered adapter: synapse=1.8.1
+[0m22:15:35.046668 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m22:15:35.109187 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:15:35.109468 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:15:35.132822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7a7e6f28-dd1a-4c9a-9d84-92225e889d90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b07fb0>]}
+[0m22:15:35.191825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7a7e6f28-dd1a-4c9a-9d84-92225e889d90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114cfe270>]}
+[0m22:15:35.192184 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 521 macros
+[0m22:15:35.192386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a7e6f28-dd1a-4c9a-9d84-92225e889d90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11266ec00>]}
+[0m22:15:35.193787 [info ] [MainThread]: 
+[0m22:15:35.194135 [debug] [MainThread]: Acquiring new synapse connection 'master'
+[0m22:15:35.197043 [debug] [ThreadPool]: Acquiring new synapse connection 'list_jaffle_shop_dbo'
+[0m22:15:35.204808 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop_dbo"
+[0m22:15:35.205081 [debug] [ThreadPool]: On list_jaffle_shop_dbo: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop_dbo"} */
+
+    select
+      table_catalog as [database],
+      table_name as [name],
+      table_schema as [schema],
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+
+    from INFORMATION_SCHEMA.TABLES
+    where table_schema like 'dbo'
+      and table_catalog like 'jaffle_shop'
+  
+[0m22:15:35.205244 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:35.205411 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:36.162616 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:36.217348 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m22:15:36.222482 [debug] [ThreadPool]: On list_jaffle_shop_dbo: ROLLBACK
+[0m22:15:36.223290 [debug] [ThreadPool]: On list_jaffle_shop_dbo: Close
+[0m22:15:36.226160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a7e6f28-dd1a-4c9a-9d84-92225e889d90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1135e1d00>]}
+[0m22:15:36.227080 [debug] [MainThread]: On master: COMMIT
+[0m22:15:36.227799 [info ] [MainThread]: Concurrency: 1 threads (target='jaffle_shop')
+[0m22:15:36.228238 [info ] [MainThread]: 
+[0m22:15:36.232117 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:15:36.233174 [info ] [Thread-1 (]: 1 of 20 START test accepted_values_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+[0m22:15:36.233798 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_jaffle_shop_dbo, now test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3)
+[0m22:15:36.234201 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:15:36.253880 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m22:15:36.254987 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:15:36.268811 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m22:15:36.269460 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m22:15:36.269755 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+    
+
+    
+    EXEC('create view 
+      dbo.testview_13661
+     as 
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "dbo"."orders"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    ''placed'',''shipped'',''completed'',''return_pending'',''returned''
+)
+
+
+;')
+    select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      select * from 
+      dbo.testview_13661
+    
+    ) dbt_internal_test;
+
+    EXEC('drop view 
+      dbo.testview_13661
+    ;')
+
+  
+[0m22:15:36.270020 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:36.270258 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:36.270599 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:37.738286 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:37.748353 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: ROLLBACK
+[0m22:15:37.749030 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: Close
+[0m22:15:37.749861 [info ] [Thread-1 (]: 1 of 20 PASS accepted_values_orders_status__placed__shipped__completed__return_pending__returned  [[32mPASS[0m in 1.52s]
+[0m22:15:37.750619 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:15:37.751164 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:15:37.751869 [info ] [Thread-1 (]: 2 of 20 START test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+[0m22:15:37.752615 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3, now test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad)
+[0m22:15:37.753058 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:15:37.758255 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m22:15:37.759397 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:15:37.764708 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m22:15:37.765632 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m22:15:37.766080 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+    
+
+    
+    EXEC('create view 
+      dbo.testview_12700
+     as 
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "dbo"."stg_orders"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    ''placed'',''shipped'',''completed'',''return_pending'',''returned''
+)
+
+
+;')
+    select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      select * from 
+      dbo.testview_12700
+    
+    ) dbt_internal_test;
+
+    EXEC('drop view 
+      dbo.testview_12700
+    ;')
+
+  
+[0m22:15:37.766503 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:37.766839 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:37.767374 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:38.491644 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:38.496841 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad: ROLLBACK
+[0m22:15:38.497665 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad: Close
+[0m22:15:38.498597 [info ] [Thread-1 (]: 2 of 20 PASS accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [[32mPASS[0m in 0.75s]
+[0m22:15:38.499462 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:15:38.500084 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:15:38.500745 [info ] [Thread-1 (]: 3 of 20 START test accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card  [RUN]
+[0m22:15:38.501398 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad, now test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278)
+[0m22:15:38.501945 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:15:38.510317 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m22:15:38.511357 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:15:38.513967 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m22:15:38.514770 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m22:15:38.515165 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+    
+
+    
+    EXEC('create view 
+      dbo.testview_10477
+     as 
+    
+    
+
+with all_values as (
+
+    select
+        payment_method as value_field,
+        count(*) as n_records
+
+    from "dbo"."stg_payments"
+    group by payment_method
+
+)
+
+select *
+from all_values
+where value_field not in (
+    ''credit_card'',''coupon'',''bank_transfer'',''gift_card''
+)
+
+
+;')
+    select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      select * from 
+      dbo.testview_10477
+    
+    ) dbt_internal_test;
+
+    EXEC('drop view 
+      dbo.testview_10477
+    ;')
+
+  
+[0m22:15:38.515534 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:38.515881 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:38.516432 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:39.201202 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:39.204798 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278: ROLLBACK
+[0m22:15:39.205547 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278: Close
+[0m22:15:39.206409 [info ] [Thread-1 (]: 3 of 20 PASS accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card  [[32mPASS[0m in 0.70s]
+[0m22:15:39.207231 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:15:39.207834 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:15:39.208520 [info ] [Thread-1 (]: 4 of 20 START test not_null_customers_customer_id .............................. [RUN]
+[0m22:15:39.209339 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278, now test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d)
+[0m22:15:39.209993 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:15:39.219111 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m22:15:39.220307 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:15:39.222743 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m22:15:39.223480 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m22:15:39.224268 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from "dbo"."customers"
+where customer_id is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:39.224666 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:39.225003 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:39.225517 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:39.869654 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:39.873900 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: ROLLBACK
+[0m22:15:39.874660 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: Close
+[0m22:15:39.875557 [info ] [Thread-1 (]: 4 of 20 PASS not_null_customers_customer_id .................................... [[32mPASS[0m in 0.67s]
+[0m22:15:39.876479 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:15:39.877062 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:15:39.877643 [info ] [Thread-1 (]: 5 of 20 START test not_null_orders_amount ...................................... [RUN]
+[0m22:15:39.878289 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d, now test.jaffle_shop.not_null_orders_amount.106140f9fd)
+[0m22:15:39.878748 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:15:39.883649 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m22:15:39.884722 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:15:39.886975 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m22:15:39.887846 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m22:15:39.888251 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_orders_amount.106140f9fd"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select amount
+from "dbo"."orders"
+where amount is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:39.888692 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:39.889079 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:39.889753 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:40.459431 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:40.462646 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: ROLLBACK
+[0m22:15:40.463347 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: Close
+[0m22:15:40.464162 [info ] [Thread-1 (]: 5 of 20 PASS not_null_orders_amount ............................................ [[32mPASS[0m in 0.59s]
+[0m22:15:40.465326 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:15:40.465982 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:15:40.466630 [info ] [Thread-1 (]: 6 of 20 START test not_null_orders_bank_transfer_amount ........................ [RUN]
+[0m22:15:40.467320 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_amount.106140f9fd, now test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49)
+[0m22:15:40.467833 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:15:40.473216 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m22:15:40.474189 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:15:40.476634 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m22:15:40.477368 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m22:15:40.477755 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select bank_transfer_amount
+from "dbo"."orders"
+where bank_transfer_amount is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:40.478113 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:40.478458 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:40.479002 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:41.021732 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:41.030111 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: ROLLBACK
+[0m22:15:41.030898 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: Close
+[0m22:15:41.031735 [info ] [Thread-1 (]: 6 of 20 PASS not_null_orders_bank_transfer_amount .............................. [[32mPASS[0m in 0.56s]
+[0m22:15:41.032556 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:15:41.033168 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:15:41.033857 [info ] [Thread-1 (]: 7 of 20 START test not_null_orders_coupon_amount ............................... [RUN]
+[0m22:15:41.034623 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49, now test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625)
+[0m22:15:41.035095 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:15:41.040507 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m22:15:41.041373 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:15:41.043946 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m22:15:41.044838 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m22:15:41.045212 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select coupon_amount
+from "dbo"."orders"
+where coupon_amount is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:41.045582 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:41.045894 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:41.046420 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:41.657986 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:41.660055 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: ROLLBACK
+[0m22:15:41.660391 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: Close
+[0m22:15:41.661277 [info ] [Thread-1 (]: 7 of 20 PASS not_null_orders_coupon_amount ..................................... [[32mPASS[0m in 0.63s]
+[0m22:15:41.662058 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:15:41.662381 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:15:41.662825 [info ] [Thread-1 (]: 8 of 20 START test not_null_orders_credit_card_amount .......................... [RUN]
+[0m22:15:41.663234 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625, now test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59)
+[0m22:15:41.663508 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:15:41.667230 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m22:15:41.667956 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:15:41.669751 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m22:15:41.670582 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m22:15:41.671027 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select credit_card_amount
+from "dbo"."orders"
+where credit_card_amount is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:41.671291 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:41.671522 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:41.671876 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:42.210608 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:42.212121 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: ROLLBACK
+[0m22:15:42.212449 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: Close
+[0m22:15:42.212862 [info ] [Thread-1 (]: 8 of 20 PASS not_null_orders_credit_card_amount ................................ [[32mPASS[0m in 0.55s]
+[0m22:15:42.213251 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:15:42.213530 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:15:42.213945 [info ] [Thread-1 (]: 9 of 20 START test not_null_orders_customer_id ................................. [RUN]
+[0m22:15:42.214388 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59, now test.jaffle_shop.not_null_orders_customer_id.c5f02694af)
+[0m22:15:42.214673 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:15:42.218127 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m22:15:42.218728 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:15:42.221566 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m22:15:42.222078 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m22:15:42.222332 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from "dbo"."orders"
+where customer_id is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:42.222558 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:42.222775 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:42.223130 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:42.833056 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:42.835094 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: ROLLBACK
+[0m22:15:42.835621 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: Close
+[0m22:15:42.836167 [info ] [Thread-1 (]: 9 of 20 PASS not_null_orders_customer_id ....................................... [[32mPASS[0m in 0.62s]
+[0m22:15:42.836604 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:15:42.836911 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:15:42.837352 [info ] [Thread-1 (]: 10 of 20 START test not_null_orders_gift_card_amount ........................... [RUN]
+[0m22:15:42.837834 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_customer_id.c5f02694af, now test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a)
+[0m22:15:42.838223 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:15:42.842026 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m22:15:42.842844 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:15:42.844554 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m22:15:42.845048 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m22:15:42.845293 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select gift_card_amount
+from "dbo"."orders"
+where gift_card_amount is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:42.845520 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:42.845738 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:42.846078 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:43.538682 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:43.543198 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: ROLLBACK
+[0m22:15:43.543901 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: Close
+[0m22:15:43.544713 [info ] [Thread-1 (]: 10 of 20 PASS not_null_orders_gift_card_amount ................................. [[32mPASS[0m in 0.71s]
+[0m22:15:43.545505 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:15:43.546080 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:15:43.546620 [info ] [Thread-1 (]: 11 of 20 START test not_null_orders_order_id ................................... [RUN]
+[0m22:15:43.547066 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a, now test.jaffle_shop.not_null_orders_order_id.cf6c17daed)
+[0m22:15:43.547344 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:15:43.551217 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m22:15:43.551807 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:15:43.553760 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m22:15:43.554388 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m22:15:43.554716 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from "dbo"."orders"
+where order_id is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:43.555006 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:43.555280 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:43.555699 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:44.142665 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:44.147224 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: ROLLBACK
+[0m22:15:44.147830 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: Close
+[0m22:15:44.148333 [info ] [Thread-1 (]: 11 of 20 PASS not_null_orders_order_id ......................................... [[32mPASS[0m in 0.60s]
+[0m22:15:44.148748 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:15:44.149051 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:15:44.149379 [info ] [Thread-1 (]: 12 of 20 START test not_null_stg_customers_customer_id ......................... [RUN]
+[0m22:15:44.149800 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_order_id.cf6c17daed, now test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m22:15:44.150084 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:15:44.153372 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:15:44.153964 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:15:44.155517 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:15:44.155986 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:15:44.156239 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from "dbo"."stg_customers"
+where customer_id is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:44.156488 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:44.156700 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:44.157046 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:44.386943 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:44.390291 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa: ROLLBACK
+[0m22:15:44.390800 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa: Close
+[0m22:15:44.391367 [info ] [Thread-1 (]: 12 of 20 PASS not_null_stg_customers_customer_id ............................... [[32mPASS[0m in 0.24s]
+[0m22:15:44.391902 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:15:44.392170 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:15:44.392453 [info ] [Thread-1 (]: 13 of 20 START test not_null_stg_orders_order_id ............................... [RUN]
+[0m22:15:44.392669 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64)
+[0m22:15:44.392837 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:15:44.395642 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:15:44.396168 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:15:44.397724 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:15:44.399269 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:15:44.401033 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from "dbo"."stg_orders"
+where order_id is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:44.401292 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:44.401528 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:44.401915 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:44.614837 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:44.615879 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64: ROLLBACK
+[0m22:15:44.616112 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64: Close
+[0m22:15:44.616412 [info ] [Thread-1 (]: 13 of 20 PASS not_null_stg_orders_order_id ..................................... [[32mPASS[0m in 0.22s]
+[0m22:15:44.616692 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:15:44.616895 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:15:44.617211 [info ] [Thread-1 (]: 14 of 20 START test not_null_stg_payments_payment_id ........................... [RUN]
+[0m22:15:44.617637 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64, now test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075)
+[0m22:15:44.617885 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:15:44.620521 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m22:15:44.621202 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:15:44.622631 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m22:15:44.623135 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m22:15:44.623354 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+
+
+select payment_id
+from "dbo"."stg_payments"
+where payment_id is null
+
+
+
+    ) dbt_internal_test
+[0m22:15:44.623551 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:44.623742 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:44.624041 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:45.181841 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:45.190079 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075: ROLLBACK
+[0m22:15:45.190803 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075: Close
+[0m22:15:45.191592 [info ] [Thread-1 (]: 14 of 20 PASS not_null_stg_payments_payment_id ................................. [[32mPASS[0m in 0.57s]
+[0m22:15:45.192385 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:15:45.192900 [debug] [Thread-1 (]: Began running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:15:45.193319 [info ] [Thread-1 (]: 15 of 20 START test relationships_orders_customer_id__customer_id__ref_customers_  [RUN]
+[0m22:15:45.193893 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075, now test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2)
+[0m22:15:45.194482 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:15:45.205643 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m22:15:45.206474 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:15:45.208978 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m22:15:45.209950 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m22:15:45.210526 [debug] [Thread-1 (]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  
+    
+
+    
+    EXEC('create view 
+      dbo.testview_17347
+     as 
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from "dbo"."orders"
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from "dbo"."customers"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+;')
+    select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      select * from 
+      dbo.testview_17347
+    
+    ) dbt_internal_test;
+
+    EXEC('drop view 
+      dbo.testview_17347
+    ;')
+
+  
+[0m22:15:45.210966 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:45.211324 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:45.211832 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:46.294626 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m22:15:46.298036 [debug] [Thread-1 (]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: ROLLBACK
+[0m22:15:46.298593 [debug] [Thread-1 (]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: Close
+[0m22:15:46.299791 [info ] [Thread-1 (]: 15 of 20 PASS relationships_orders_customer_id__customer_id__ref_customers_ .... [[32mPASS[0m in 1.11s]
+[0m22:15:46.300697 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:15:46.301271 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:15:46.302466 [info ] [Thread-1 (]: 16 of 20 START test unique_customers_customer_id ............................... [RUN]
+[0m22:15:46.303216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2, now test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1)
+[0m22:15:46.303698 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:15:46.311850 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m22:15:46.312813 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:15:46.315504 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m22:15:46.316362 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m22:15:46.316740 [debug] [Thread-1 (]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dbo"."customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+    ) dbt_internal_test
+[0m22:15:46.317110 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:46.317425 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:46.317893 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:46.553417 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:46.556603 [debug] [Thread-1 (]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: ROLLBACK
+[0m22:15:46.557280 [debug] [Thread-1 (]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: Close
+[0m22:15:46.558032 [info ] [Thread-1 (]: 16 of 20 PASS unique_customers_customer_id ..................................... [[32mPASS[0m in 0.25s]
+[0m22:15:46.558837 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:15:46.559242 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:15:46.559608 [info ] [Thread-1 (]: 17 of 20 START test unique_orders_order_id ..................................... [RUN]
+[0m22:15:46.560053 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1, now test.jaffle_shop.unique_orders_order_id.fed79b3a6e)
+[0m22:15:46.560647 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:15:46.566476 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m22:15:46.567401 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:15:46.570272 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m22:15:46.571213 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m22:15:46.571651 [debug] [Thread-1 (]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "dbo"."orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+    ) dbt_internal_test
+[0m22:15:46.572033 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:46.572381 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:46.572895 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:46.823806 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:46.825284 [debug] [Thread-1 (]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: ROLLBACK
+[0m22:15:46.825563 [debug] [Thread-1 (]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: Close
+[0m22:15:46.826242 [info ] [Thread-1 (]: 17 of 20 PASS unique_orders_order_id ........................................... [[32mPASS[0m in 0.27s]
+[0m22:15:46.826616 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:15:46.826848 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:15:46.827192 [info ] [Thread-1 (]: 18 of 20 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m22:15:46.827579 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_orders_order_id.fed79b3a6e, now test.jaffle_shop.unique_stg_customers_customer_id.c7614daada)
+[0m22:15:46.827806 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:15:46.830275 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m22:15:46.831090 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:15:46.833085 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m22:15:46.834002 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m22:15:46.834409 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dbo"."stg_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+    ) dbt_internal_test
+[0m22:15:46.834949 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:46.835179 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:46.835488 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:47.049123 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:47.053050 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_customers_customer_id.c7614daada: ROLLBACK
+[0m22:15:47.054111 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_customers_customer_id.c7614daada: Close
+[0m22:15:47.055796 [info ] [Thread-1 (]: 18 of 20 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.23s]
+[0m22:15:47.056422 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:15:47.056794 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:15:47.057141 [info ] [Thread-1 (]: 19 of 20 START test unique_stg_orders_order_id ................................. [RUN]
+[0m22:15:47.057512 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_customers_customer_id.c7614daada, now test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a)
+[0m22:15:47.057784 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:15:47.062429 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m22:15:47.063246 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:15:47.065210 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m22:15:47.065966 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m22:15:47.066474 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "dbo"."stg_orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+    ) dbt_internal_test
+[0m22:15:47.066829 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:47.067152 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:47.067602 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:47.292055 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:47.293374 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a: ROLLBACK
+[0m22:15:47.293677 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a: Close
+[0m22:15:47.294265 [info ] [Thread-1 (]: 19 of 20 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.24s]
+[0m22:15:47.294859 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:15:47.295101 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:15:47.295383 [info ] [Thread-1 (]: 20 of 20 START test unique_stg_payments_payment_id ............................. [RUN]
+[0m22:15:47.295764 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a, now test.jaffle_shop.unique_stg_payments_payment_id.3744510712)
+[0m22:15:47.295978 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:15:47.300011 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m22:15:47.300596 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:15:47.355884 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m22:15:47.356539 [debug] [Thread-1 (]: Using synapse connection "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m22:15:47.362808 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_payments_payment_id.3744510712: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "node_id": "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"} */
+-- Create target schema in synapse db if it does not
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbo')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbo]')
+  END
+
+  select
+      
+      count(*) as failures,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_warn,
+      case when count(*) != 0
+        then 'true' else 'false' end as should_error
+    from (
+      
+    
+    
+
+select
+    payment_id as unique_field,
+    count(*) as n_records
+
+from "dbo"."stg_payments"
+where payment_id is not null
+group by payment_id
+having count(*) > 1
+
+
+
+    ) dbt_internal_test
+[0m22:15:47.366523 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:47.366787 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:15:47.367141 [debug] [Thread-1 (]: fabric adapter: Connected to db: jaffle_shop
+[0m22:15:47.588965 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:47.590376 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_payments_payment_id.3744510712: ROLLBACK
+[0m22:15:47.590613 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_payments_payment_id.3744510712: Close
+[0m22:15:47.590986 [info ] [Thread-1 (]: 20 of 20 PASS unique_stg_payments_payment_id ................................... [[32mPASS[0m in 0.30s]
+[0m22:15:47.591529 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:15:47.593132 [debug] [MainThread]: On master: COMMIT
+[0m22:15:47.593807 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:15:47.594701 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_payments_payment_id.3744510712' was properly closed.
+[0m22:15:47.595903 [info ] [MainThread]: 
+[0m22:15:47.596707 [info ] [MainThread]: Finished running 20 data tests in 0 hours 0 minutes and 12.40 seconds (12.40s).
+[0m22:15:47.602124 [debug] [MainThread]: Command end result
+[0m22:15:47.631909 [info ] [MainThread]: 
+[0m22:15:47.632299 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:15:47.632481 [info ] [MainThread]: 
+[0m22:15:47.632673 [info ] [MainThread]: Done. PASS=20 WARN=0 ERROR=0 SKIP=0 TOTAL=20
+[0m22:15:47.634425 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 12.928139, "process_in_blocks": "0", "process_kernel_time": 0.270486, "process_mem_max_rss": "132956160", "process_out_blocks": "0", "process_user_time": 1.403622}
+[0m22:15:47.634716 [debug] [MainThread]: Command `dbt test` succeeded at 22:15:47.634667 after 12.93 seconds
+[0m22:15:47.634950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110532e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e890d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f9fb00>]}
+[0m22:15:47.635149 [debug] [MainThread]: Flushing usage events
+[0m22:18:20.008786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105703440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a6da30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a6d790>]}
+
+
+============================== 22:18:20.012860 | 7d845156-fb18-43bd-b25f-8e37f82acac3 ==============================
+[0m22:18:20.012860 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:18:20.013224 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs generate', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:18:20.416339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7d845156-fb18-43bd-b25f-8e37f82acac3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094e1fd0>]}
+[0m22:18:20.444836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7d845156-fb18-43bd-b25f-8e37f82acac3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109143260>]}
+[0m22:18:20.445691 [info ] [MainThread]: Registered adapter: synapse=1.8.1
+[0m22:18:20.513286 [debug] [MainThread]: checksum: 132857a23e9d07220246854f7763165174ce9b737cfc7867629ace4294e520b1, vars: {}, profile: , target: , version: 1.8.9
+[0m22:18:20.596155 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:18:20.596465 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:18:20.620830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7d845156-fb18-43bd-b25f-8e37f82acac3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b03530>]}
+[0m22:18:20.633925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7d845156-fb18-43bd-b25f-8e37f82acac3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b36960>]}
+[0m22:18:20.634221 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 521 macros
+[0m22:18:20.634424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7d845156-fb18-43bd-b25f-8e37f82acac3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109608b30>]}
+[0m22:18:20.635723 [info ] [MainThread]: 
+[0m22:18:20.636073 [debug] [MainThread]: Acquiring new synapse connection 'master'
+[0m22:18:20.638914 [debug] [ThreadPool]: Acquiring new synapse connection 'list_jaffle_shop_dbo'
+[0m22:18:20.647162 [debug] [ThreadPool]: Using synapse connection "list_jaffle_shop_dbo"
+[0m22:18:20.647427 [debug] [ThreadPool]: On list_jaffle_shop_dbo: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "list_jaffle_shop_dbo"} */
+
+    select
+      table_catalog as [database],
+      table_name as [name],
+      table_schema as [schema],
+      case when table_type = 'BASE TABLE' then 'table'
+           when table_type = 'VIEW' then 'view'
+           else table_type
+      end as table_type
+
+    from INFORMATION_SCHEMA.TABLES
+    where table_schema like 'dbo'
+      and table_catalog like 'jaffle_shop'
+  
+[0m22:18:20.647600 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:18:20.647786 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:18:21.763529 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:18:21.812030 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m22:18:21.815826 [debug] [ThreadPool]: On list_jaffle_shop_dbo: ROLLBACK
+[0m22:18:21.816122 [debug] [ThreadPool]: On list_jaffle_shop_dbo: Close
+[0m22:18:21.817309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7d845156-fb18-43bd-b25f-8e37f82acac3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10982f2f0>]}
+[0m22:18:21.817714 [info ] [MainThread]: Concurrency: 1 threads (target='jaffle_shop')
+[0m22:18:21.818494 [info ] [MainThread]: 
+[0m22:18:21.821002 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_customers
+[0m22:18:21.821558 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_jaffle_shop_dbo, now seed.jaffle_shop.raw_customers)
+[0m22:18:21.822494 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_customers
+[0m22:18:21.829489 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_customers
+[0m22:18:21.830262 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_customers
+[0m22:18:21.830562 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_orders
+[0m22:18:21.830960 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_customers, now seed.jaffle_shop.raw_orders)
+[0m22:18:21.831210 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_orders
+[0m22:18:21.832413 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_orders
+[0m22:18:21.832764 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_orders
+[0m22:18:21.832960 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_payments
+[0m22:18:21.833139 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_orders, now seed.jaffle_shop.raw_payments)
+[0m22:18:21.833425 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_payments
+[0m22:18:21.834420 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_payments
+[0m22:18:21.834733 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_payments
+[0m22:18:21.834931 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_customers
+[0m22:18:21.835333 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_payments, now model.jaffle_shop.stg_customers)
+[0m22:18:21.835685 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m22:18:21.838831 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m22:18:21.839674 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_customers
+[0m22:18:21.840203 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_customers
+[0m22:18:21.840416 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_orders
+[0m22:18:21.840752 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers, now model.jaffle_shop.stg_orders)
+[0m22:18:21.840970 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m22:18:21.842600 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m22:18:21.843359 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_orders
+[0m22:18:21.843846 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_orders
+[0m22:18:21.844075 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_payments
+[0m22:18:21.844368 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_orders, now model.jaffle_shop.stg_payments)
+[0m22:18:21.844583 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m22:18:21.846175 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m22:18:21.846664 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_payments
+[0m22:18:21.847171 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_payments
+[0m22:18:21.847560 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:18:21.848021 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_payments, now test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m22:18:21.848385 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:18:21.855198 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m22:18:21.856316 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:18:21.856764 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m22:18:21.856971 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:18:21.857218 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.jaffle_shop.unique_stg_customers_customer_id.c7614daada)
+[0m22:18:21.857451 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:18:21.861060 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m22:18:21.861963 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:18:21.862417 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m22:18:21.862651 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:18:21.862892 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_customers_customer_id.c7614daada, now test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad)
+[0m22:18:21.863074 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:18:21.868558 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m22:18:21.871789 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:18:21.872319 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m22:18:21.872557 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:18:21.872814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad, now test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64)
+[0m22:18:21.872996 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:18:21.875681 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m22:18:21.876193 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:18:21.876547 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m22:18:21.876747 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:18:21.877089 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64, now test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a)
+[0m22:18:21.877446 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:18:21.880168 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m22:18:21.880800 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:18:21.881254 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m22:18:21.881467 [debug] [Thread-1 (]: Began running node model.jaffle_shop.customers
+[0m22:18:21.881820 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a, now model.jaffle_shop.customers)
+[0m22:18:21.882101 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.customers
+[0m22:18:21.884929 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m22:18:21.886090 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.customers
+[0m22:18:21.886575 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.customers
+[0m22:18:21.886835 [debug] [Thread-1 (]: Began running node model.jaffle_shop.orders
+[0m22:18:21.887160 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.customers, now model.jaffle_shop.orders)
+[0m22:18:21.888659 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.orders
+[0m22:18:21.891123 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.orders"
+[0m22:18:21.891635 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.orders
+[0m22:18:21.892001 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.orders
+[0m22:18:21.892229 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:18:21.892835 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.orders, now test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278)
+[0m22:18:21.893048 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:18:21.897623 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m22:18:21.898345 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:18:21.898942 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m22:18:21.899165 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:18:21.899448 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278, now test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075)
+[0m22:18:21.899678 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:18:21.902320 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m22:18:21.902896 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:18:21.903261 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m22:18:21.903476 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:18:21.903813 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075, now test.jaffle_shop.unique_stg_payments_payment_id.3744510712)
+[0m22:18:21.904108 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:18:21.906348 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m22:18:21.907300 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:18:21.907751 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m22:18:21.907982 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:18:21.908209 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_payments_payment_id.3744510712, now test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d)
+[0m22:18:21.908385 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:18:21.910633 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m22:18:21.911127 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:18:21.911470 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m22:18:21.911677 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:18:21.912016 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d, now test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1)
+[0m22:18:21.912231 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:18:21.914819 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m22:18:21.915573 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:18:21.915967 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m22:18:21.916185 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:18:21.916470 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1, now test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3)
+[0m22:18:21.916780 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:18:21.919355 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m22:18:21.920055 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:18:21.920512 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m22:18:21.920775 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:18:21.921095 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3, now test.jaffle_shop.not_null_orders_amount.106140f9fd)
+[0m22:18:21.921417 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:18:21.923961 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m22:18:21.924436 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:18:21.924794 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m22:18:21.925005 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:18:21.925360 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_amount.106140f9fd, now test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49)
+[0m22:18:21.925650 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:18:21.927899 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m22:18:21.928629 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:18:21.929074 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m22:18:21.929322 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:18:21.929568 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49, now test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625)
+[0m22:18:21.929745 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:18:21.932283 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m22:18:21.932774 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:18:21.933155 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m22:18:21.933386 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:18:21.933608 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625, now test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59)
+[0m22:18:21.933780 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:18:21.936191 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m22:18:21.936922 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:18:21.937325 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m22:18:21.937533 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:18:21.937760 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59, now test.jaffle_shop.not_null_orders_customer_id.c5f02694af)
+[0m22:18:21.938005 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:18:21.941429 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m22:18:21.941945 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:18:21.942308 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m22:18:21.942523 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:18:21.942850 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_customer_id.c5f02694af, now test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a)
+[0m22:18:21.943502 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:18:21.946704 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m22:18:21.947577 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:18:21.948032 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m22:18:21.948264 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:18:21.948512 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a, now test.jaffle_shop.not_null_orders_order_id.cf6c17daed)
+[0m22:18:21.948801 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:18:21.951527 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m22:18:21.951985 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:18:21.952344 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m22:18:21.952579 [debug] [Thread-1 (]: Began running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:18:21.953007 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_order_id.cf6c17daed, now test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2)
+[0m22:18:21.953455 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:18:21.958074 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m22:18:21.958564 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:18:21.958923 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m22:18:21.959129 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:18:21.959484 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2, now test.jaffle_shop.unique_orders_order_id.fed79b3a6e)
+[0m22:18:21.959761 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:18:21.962286 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m22:18:21.962739 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:18:21.963084 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m22:18:21.963644 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:18:21.963797 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_orders_order_id.fed79b3a6e' was properly closed.
+[0m22:18:21.965608 [debug] [MainThread]: Command end result
+[0m22:18:22.028503 [debug] [MainThread]: Acquiring new synapse connection 'generate_catalog'
+[0m22:18:22.028780 [info ] [MainThread]: Building catalog
+[0m22:18:22.035080 [debug] [ThreadPool]: Acquiring new synapse connection 'jaffle_shop.information_schema'
+[0m22:18:22.045149 [debug] [ThreadPool]: Using synapse connection "jaffle_shop.information_schema"
+[0m22:18:22.045868 [debug] [ThreadPool]: On jaffle_shop.information_schema: /* {"app": "dbt", "dbt_version": "1.8.9", "profile_name": "azure_synapse", "target_name": "jaffle_shop", "connection_name": "jaffle_shop.information_schema"} */
+
+    
+        with tables as (
+            -- avoid with statement to be able to wrap into CTE (limitation of Synapse)
+
+    SELECT
+        table_name,
+        table_schema,
+        principal_name,
+        table_type
+    FROM (
+        SELECT
+            table_name,
+            schema_name AS table_schema,
+            COALESCE(relations.principal_id, schemas.principal_id) AS owner_principal_id,
+            table_type
+        FROM (
+            SELECT
+                name AS table_name,
+                schema_id AS schema_id,
+                principal_id AS principal_id,
+                'BASE TABLE' AS table_type
+            FROM
+                sys.tables 
+            UNION ALL
+            SELECT
+                name AS table_name,
+                schema_id AS schema_id,
+                principal_id AS principal_id,
+                'VIEW' AS table_type
+            FROM
+                sys.views 
+        ) AS relations
+        JOIN (
+            SELECT
+                name AS schema_name,
+                schema_id AS schema_id,
+                principal_id AS principal_id
+            FROM
+                sys.schemas 
+        ) AS schemas ON relations.schema_id = schemas.schema_id
+    ) AS relations_with_metadata
+    JOIN (
+        SELECT
+            name AS principal_name,
+            principal_id AS principal_id
+        FROM
+            sys.database_principals 
+    ) AS principals ON relations_with_metadata.owner_principal_id = principals.principal_id
+
+
+            
+
+    where (
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('orders')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('raw_payments')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('raw_orders')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('stg_customers')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('stg_orders')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('stg_payments')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('customers')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('raw_customers')
+                )
+            )
+
+
+        ),
+        columns as (
+            select
+        table_catalog as table_database,
+        table_schema,
+        table_name,
+        column_name,
+        ordinal_position as column_index,
+        data_type as column_type
+    from INFORMATION_SCHEMA.COLUMNS 
+
+
+            
+
+    where (
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('orders')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('raw_payments')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('raw_orders')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('stg_customers')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('stg_orders')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('stg_payments')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('customers')
+                )
+             or 
+                (
+                    upper(table_schema) = upper('dbo')
+                    and upper(table_name) = upper('raw_customers')
+                )
+            )
+
+
+        )
+        select
+        cols.table_database,
+        tv.table_schema,
+        tv.table_name,
+        tv.table_type,
+        null as table_comment,
+        tv.principal_name as table_owner,
+        cols.column_name,
+        cols.column_index,
+        cols.column_type,
+        null as column_comment
+    from tables as tv
+    join columns as cols on tv.table_schema = cols.table_schema and tv.table_name = cols.table_name
+    order by cols.column_index
+  
+[0m22:18:22.046451 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:18:22.046652 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=dbt-test.sql.azuresynapse.net;Database=jaffle_shop;encrypt=Yes;TrustServerCertificate=No;APP=dbt-synapse/1.8.6;ConnectRetryCount=1
+[0m22:18:22.266584 [debug] [ThreadPool]: fabric adapter: Connected to db: jaffle_shop
+[0m22:18:22.636084 [debug] [ThreadPool]: SQL status: OK in 1.000 seconds
+[0m22:18:22.645099 [debug] [ThreadPool]: On jaffle_shop.information_schema: Close
+[0m22:18:22.673770 [info ] [MainThread]: Catalog written to /Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/target/catalog.json
+[0m22:18:22.675713 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 2.718946, "process_in_blocks": "0", "process_kernel_time": 0.320145, "process_mem_max_rss": "134807552", "process_out_blocks": "0", "process_user_time": 1.336233}
+[0m22:18:22.676131 [debug] [MainThread]: Command `dbt docs generate` succeeded at 22:18:22.676077 after 2.72 seconds
+[0m22:18:22.676338 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m22:18:22.676479 [debug] [MainThread]: Connection 'jaffle_shop.information_schema' was properly closed.
+[0m22:18:22.676667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088cf5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083baed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107da6150>]}
+[0m22:18:22.676866 [debug] [MainThread]: Flushing usage events
+[0m22:18:44.663185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c8e8a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110131940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101316a0>]}
+
+
+============================== 22:18:44.667945 | 699cd0c6-97f4-4b9a-b68c-ec8ae1d6768c ==============================
+[0m22:18:44.667945 [info ] [MainThread]: Running with dbt=1.8.9
+[0m22:18:44.668363 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pavlozabavskyi/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/pavlozabavskyi/Documents/Data Engineering/Module 1/Dev-DataOps/Homeworks/dev-data-ops/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs serve', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:18:44.917338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '699cd0c6-97f4-4b9a-b68c-ec8ae1d6768c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11080a9f0>]}
+[0m22:18:44.943177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '699cd0c6-97f4-4b9a-b68c-ec8ae1d6768c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110808680>]}
