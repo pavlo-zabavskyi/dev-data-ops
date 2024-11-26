@@ -14,7 +14,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Copy the contents of the server directory into the container at /app
-COPY server/ .
+COPY server .
 
 # Install dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
